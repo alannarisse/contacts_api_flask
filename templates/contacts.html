@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacts API</title>
+</head>
+<body>
+	<h1>All the contacts</h1>
+
+	{% for key, value in data.items %}
+		<span class="key">{{ key }}: </span><span class="value">{{ value }}</span><br>
+	{% endfor %}
+</body>
+</html>

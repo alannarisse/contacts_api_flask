@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacts API</title>
+	<style>
+		body { 
+			font-family: verdana; 
+			font-size: 14px;
+			margin: auto;
+			width: 75%;
+		}
+		section { 
+			display: grid; 
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 20px;
+		}
+		section a {
+			padding: 10px;
+			background-color: #e14d30;
+			border: 1px solid #999;
+			border-radius: 12px;
+			color: #fff;
+			text-decoration: none;
+			max-width: 180px;
+			text-align: center;
+		}
+		section a:hover {background-color: #c96750;}
+
+	</style>
+</head>
+<body>
+	<h1>Contacts! Get your contacts!</h1>
+
+	<section>
+		<a href="/all_contacts">See all contacts</a>
+		<a href="/new_contact">Add a new contact</a>
+		<a href="/contacts?id=2">Update a contact</a>
+		<a href="/cntacts?id=1">Delete a contact</a>
+	</section>
+	<br><br>
+	<form method="POST" action="http://localhost:5000/">
+		Find by name <input type="text" name="name" placeholder="Alanna">
+		<input type="submit"  value="search">
+	</form>
+	<div>
+		{% for key, value in data.items() %}
+			<span class="key">{{ key }}: </span><span class="value">{{ value }}</span><br>
+		{% endfor %}
+
+	</div>
+</body>
+</html>
