@@ -1,6 +1,6 @@
 # Contacts API
 
-## This Contacts API uses Flask
+This Contacts API uses Flask. Today is my first time using Flask. It was an adventure!
 
 ## Installation and Use instructions
 This Readme assumes you have already installed git, python, pip, and virtualenv.
@@ -14,8 +14,13 @@ This Readme assumes you have already installed git, python, pip, and virtualenv.
 
 ### Endpoints
 
-[View all contacts](http://localhost:5000/contacts)
-[Create New Contact](http://localhost:5000/new_contact)
-[Update Contact](http://localhost:5000/contacts?id=1)
-[Update Contact](http://localhost:5000/contacts?id=1)
+- [View all contacts](http://localhost:5000/contacts) (dummy data only)
+- [Create New Contact](http://localhost:5000/new_contact)
+- [Update Contact](http://localhost:5000/contacts?id=1) (not working)
+- [Delete Contact](http://localhost:5000/contacts?id=1)(not working)
+
+### Not Complete:
+- Authorization, had I gotten there, I probably would have used Flask-JWT
+- Update - just plum ran out of time
+- Delete - just plum ran out of time
 
